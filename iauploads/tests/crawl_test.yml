@@ -1,0 +1,21 @@
+
+files_directory: ./tests/arcs
+
+year: 2017
+
+metadata:
+    collection: portuguese-web-archive
+    mediatype: web,
+    pwacrawlid: crawl_test,
+    external_identifier: urn:X-pwacrawlid:crawl_test,
+    title: Crawl test collection to test uploads for internet archive,
+    adder: Portuguese Web Archive,
+    creator: Portuguese Web Archive,
+    contributor: Portuguese Web Archive,
+    coverage: 3 million web files crawled between 2011-05-20 and 2012-02-05.,
+    description: Contains an extraordinary crawl of content interesting to enable web preservation such as format specifications from W3C.,
+    language: Portuguese and English.,
+    subject: Crawl test collection to test uploads for internet archive,
+    notes: Just some fake information,
+    credits: Internet Archive Heritrix team.,
+    date: 2017-01-01
