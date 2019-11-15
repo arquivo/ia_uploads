@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='iauploads',
-    version='1.0.0',
+    version='1.0.1',
     packages=['iauploads'],
     url='https://arquivo.pt',
     license='',
@@ -15,8 +15,8 @@ setup(
     ],
     entry_points={
             'console_scripts': [
-                'ia-upload=upload:main'
-                'ia-generate-items=generate_ia_items:main'
+                'ia-upload=iauploads.upload:main',
+                'ia-generate-items=iauploads.generate_ia_items:main',
             ],
     }
 )
