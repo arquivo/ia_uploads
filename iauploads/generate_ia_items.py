@@ -30,7 +30,8 @@ def main():
     for root, dirs, files in os.walk(files_directory):
         for file in files:
             if file.endswith("warc.gz") or file.endswith("arc.gz") or file.endswith(".warc"):
-                if counter == args.number_of_files:
+                counter = counter + 1
+                if counter > int(args.number_of_files):
                     cycle_number = cycle_number + 1
                     str_item_number = str(cycle_number).zfill(4)
                     counter = 0
