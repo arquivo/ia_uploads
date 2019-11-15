@@ -9,8 +9,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("config_path", help="Specify path to the configuration file.")
     parser.add_argument("--number_of_files", default=100, help="Number of files per bucket. (default = 100)")
+    parser.add_argument("--hash", action="store_true", help="Generate md5 hash.")
 
     args = parser.parse_args()
+
+    hashing = True if args.hash else False
 
     with open(args.config_path) as file:
         configs = yaml.load(file, Loader=yaml.FullLoader)
@@ -35,7 +38,10 @@ def main():
                 full_path_filename = os.path.join(root, file)
 
                 item_name = "{}-{}-{}-{}".format(collection, pwacrawlid, year, str_item_number)
-                hash = md5(open(full_path_filename, 'rb').read()).hexdigest()
+                if hashing:
+                    hash = md5(open(full_path_filename, 'rb').read()).hexdigest()
+                else:
+                    hash = "-"
                 print("{} {} {}".format(item_name, full_path_filename, hash))
 
 
