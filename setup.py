@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='iauploads',
-    version='1.0.2',
+    version='1.1.2',
     packages=['iauploads'],
     url='https://arquivo.pt',
     license='',

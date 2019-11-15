@@ -24,19 +24,19 @@ def main():
     year = configs['year']
     pwacrawlid = configs['metadata']['pwacrawlid']
 
-    for filename in os.listdir(files_directory):
+    for root, dirs, files in os.walk(files_directory):
+        for file in files:
+            if file.endswith("warc.gz") or file.endswith("arc.gz") or file.endswith(".warc"):
+                if counter == args.number_of_files:
+                    cycle_number = cycle_number + 1
+                    str_item_number = str(cycle_number).zfill(4)
+                    counter = 0
 
-        if counter == args.number_of_files:
-            cycle_number = cycle_number + 1
-            str_item_number = str(cycle_number).zfill(4)
-            counter = 0
+                full_path_filename = os.path.join(root, file)
 
-        full_path_filename = os.path.join(files_directory, filename)
-
-        if os.path.isfile(full_path_filename):
-            item_name = "{}-{}-{}-{}".format(collection, pwacrawlid, year, str_item_number)
-            hash = md5(open(full_path_filename, 'rb').read()).hexdigest()
-            print("{} {} {}".format(item_name, filename, hash))
+                item_name = "{}-{}-{}-{}".format(collection, pwacrawlid, year, str_item_number)
+                hash = md5(open(full_path_filename, 'rb').read()).hexdigest()
+                print("{} {} {}".format(item_name, full_path_filename, hash))
 
 
 if __name__ == "__main__":
