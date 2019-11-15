@@ -34,7 +34,7 @@ def main():
                 if counter > int(args.number_of_files):
                     cycle_number = cycle_number + 1
                     str_item_number = str(cycle_number).zfill(4)
-                    counter = 0
+                    counter = 1
 
                 full_path_filename = os.path.join(root, file)
 
