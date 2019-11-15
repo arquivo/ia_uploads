@@ -5,27 +5,11 @@ import yaml
 from internetarchive import upload
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("config_path", help="Specify path to the configuration file.")
-    parser.add_argument("uploadlist_file_path", help="Specify path of the file with the arcs upload list.")
-    parser.add_argument('--AWS_ACCESS_KEY_ID_ENV', dest="access", default="AWS_ACCESS_KEY",
-                        help="Specify ENVIROMENT variable from where to get ACCESS KEY.")
-    parser.add_argument('--AWS_SECRET_ACCESS_KEY_ENV', dest="secret", default="AWS_SECRET_ACCESS_KEY",
-                        help="Specify ENVIROMENT variable from where to get SECRET KEY.")
-    parser.add_argument('--debug', action="store_true", help="Set upload debug mode.")
-
-    args = parser.parse_args()
-
-    debug = True if args.debug else False
-
-    access = os.environ[args.access]
-    secret = os.environ[args.secret]
-
-    with open(args.config_path) as file:
+def iaupload(config, upload_list, access, secret, debug):
+    with open(config) as file:
         configs = yaml.load(file, Loader=yaml.FullLoader)
 
-        with open(args.uploadlist_file_path, mode='r') as input_file:
+        with open(upload_list, mode='r') as input_file:
             for line in input_file.readlines():
                 identifier, arc, file_md5 = line.split()
 
@@ -38,6 +22,24 @@ def main():
                     print("{}\t{}".format(result[0].status_code, line))
                 else:
                     print("{}\t{}".format("ERROR", line))
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("config_path", help="Specify path to the configuration file.")
+    parser.add_argument("uploadlist_file_path", help="Specify path of the file with the arcs upload list.")
+    parser.add_argument('--AWS_ACCESS_KEY_ID_ENV', dest="access", default="AWS_ACCESS_KEY",
+                        help="Specify ENVIROMENT variable from where to get ACCESS KEY.")
+    parser.add_argument('--AWS_SECRET_ACCESS_KEY_ENV', dest="secret", default="AWS_SECRET_ACCESS_KEY",
+                        help="Specify ENVIROMENT variable from where to get SECRET KEY.")
+    parser.add_argument('--debug', action="store_true", help="Set upload debug mode.")
+    args = parser.parse_args()
+
+    debug = True if args.debug else False
+    access = os.environ[args.access]
+    secret = os.environ[args.secret]
+
+    iaupload(args.config_path, args.uploadlist_file_path, access, secret, debug)
 
 
 if __name__ == '__main__':
