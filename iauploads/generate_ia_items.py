@@ -8,7 +8,7 @@ import yaml
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("config_path", help="Specify path to the configuration file.")
-    parser.add_argument("--number_of_files", default=100, help="Number of files per bucket.")
+    parser.add_argument("--number_of_files", default=100, help="Number of files per bucket. (default = 100)")
 
     args = parser.parse_args()
 
@@ -36,8 +36,7 @@ def main():
         if os.path.isfile(full_path_filename):
             item_name = "{}-{}-{}-{}".format(collection, pwacrawlid, year, str_item_number)
             hash = md5(open(full_path_filename, 'rb').read()).hexdigest()
-
-        print("{} {} {}".format(item_name, filename, hash))
+            print("{} {} {}".format(item_name, filename, hash))
 
 
 if __name__ == "__main__":
