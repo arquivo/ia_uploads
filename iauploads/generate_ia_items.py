@@ -30,11 +30,10 @@ def main():
     for root, dirs, files in os.walk(files_directory):
         for file in files:
             if file.endswith("warc.gz") or file.endswith("arc.gz") or file.endswith(".warc"):
-                counter = counter + 1
-                if counter > int(args.number_of_files):
+                if counter >= int(args.number_of_files):
                     cycle_number = cycle_number + 1
                     str_item_number = str(cycle_number).zfill(4)
-                    counter = 1
+                    counter = 0
 
                 full_path_filename = os.path.join(root, file)
 
@@ -44,6 +43,7 @@ def main():
                 else:
                     hash = "-"
                 print("{} {} {}".format(item_name, full_path_filename, hash))
+                counter = counter + 1
 
 
 if __name__ == "__main__":
