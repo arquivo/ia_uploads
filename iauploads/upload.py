@@ -5,7 +5,6 @@ import yaml
 from internetarchive import upload
 
 
-# TODO add logging
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("config_path", help="Specify path to the configuration file.")
@@ -26,16 +25,19 @@ def main():
     with open(args.config_path) as file:
         configs = yaml.load(file, Loader=yaml.FullLoader)
 
-        with open(args.upload_file_path, mode='rb') as input_file:
+        with open(args.uploadlist_file_path, mode='r') as input_file:
             for line in input_file.readlines():
                 identifier, arc, file_md5 = line.split()
 
-                # returns a list of requests.Response
-                # what to do with this?
                 result = upload(identifier, files=os.path.join(configs['files_directory'], arc),
                                 metadata=configs['metadata'],
                                 access_key=access,
                                 secret_key=secret, verbose=True, retries=10, retries_sleep=300, debug=debug)
+
+                if hasattr(result[0], 'status_code'):
+                    print("{}\t{}".format(result[0].status_code, line))
+                else:
+                    print("{}\t{}".format("ERROR", line))
 
 
 if __name__ == '__main__':

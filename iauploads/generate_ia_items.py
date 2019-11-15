@@ -20,7 +20,7 @@ def main():
     str_item_number = str(cycle_number).zfill(4)
 
     files_directory = configs['files_directory']
-    collection = configs['collection']
+    collection = configs['metadata']['collection']
     year = configs['year']
     pwacrawlid = configs['metadata']['pwacrawlid']
 

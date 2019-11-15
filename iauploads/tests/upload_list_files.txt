@@ -1,0 +1,2 @@
+portuguese-web-archive-crawl_test-2017-0000 IAH-20150922105508-00000-p82.arquivo.pt.arc.gz 69f33bdb0b0def52b507a76bbf5186f7
+portuguese-web-archive-crawl_test-2017-0000 IAH-20150922105508-00001-p82.arquivo.pt.arc.gz b8b5c8a5694c0caa9e35efe9cff09e43
