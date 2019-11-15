@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='IAStorage',
+    name='iauploads',
     version='1.0.0',
     packages=['iauploads'],
     url='https://arquivo.pt',
