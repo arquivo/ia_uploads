@@ -5,6 +5,10 @@
 
 ## Usage
 
+Available commands:
+- ia-generate-items
+- ia-upload
+
 ```<command> --help``` gives more information about each command utilization.
 
 Write the configuration yaml file with the metadata about the collections to be uploaded (ex. iaupload_awp24.yml).
