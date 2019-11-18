@@ -41,6 +41,14 @@ Generate a list with all the WARC files to be uploaded and their item number:
 ia-generate-items iaupload_awp24.yml > iaupload_awp24_list.txt
 ```
 
+Setup Internet Archive Access keys to the corresponding ENVIROMENT variables (default):
+```
+export AWS_ACCESS_KEY=<access_key>
+export AWS_SECRET_ACCESS_KEY=<secret_key>
+```
+
+Then start to upload:
+
 ```
 bash$ ia-upload iaupload_awp24.yml awp24_uploadlist.txt > awp24_ia_upload.log
 
