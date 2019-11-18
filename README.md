@@ -35,7 +35,7 @@ metadata:
     date: "2017-01-01"
 ```
 
-Generate list with all WARC files to upload and their bucket number:
+Generate a list with all the WARC files to be uploaded and their item number:
 
 ```
 ia-generate-items iaupload_awp24.yml > iaupload_awp24_list.txt
