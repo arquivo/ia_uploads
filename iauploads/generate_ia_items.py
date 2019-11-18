@@ -38,11 +38,10 @@ def main():
                 full_path_filename = os.path.join(root, file)
 
                 item_name = "{}-{}-{}-{}".format(collection, pwacrawlid, year, str_item_number)
-                if hashing:
-                    hash = md5(open(full_path_filename, 'rb').read()).hexdigest()
-                else:
-                    hash = "-"
-                print("{} {} {}".format(item_name, full_path_filename, hash))
+
+                hashit = md5(open(full_path_filename, 'rb').read()).hexdigest() if hashing else "-"
+
+                print("{} {} {}".format(item_name, full_path_filename, hashit))
                 counter = counter + 1
 
 

@@ -13,14 +13,17 @@ def iaupload(config, upload_list, access, secret, debug):
             for line in input_file.readlines():
                 identifier, arc, file_md5 = line.split()
 
-                result = upload(identifier, files=os.path.join(configs['files_directory'], arc),
-                                metadata=configs['metadata'],
-                                access_key=access,
-                                secret_key=secret, verbose=True, retries=10, retries_sleep=300, debug=debug)
+                try:
+                    result = upload(identifier, files=os.path.join(configs['files_directory'], arc),
+                                    metadata=configs['metadata'],
+                                    access_key=access,
+                                    secret_key=secret, verbose=True, retries=10, retries_sleep=300, debug=debug)
 
-                if hasattr(result[0], 'status_code'):
-                    print("{}\t{}".format(result[0].status_code, line))
-                else:
+                    if hasattr(result[0], 'status_code'):
+                        print("{}\t{}".format(result[0].status_code, line))
+                    else:
+                        print("{}\t{}".format("ERROR", line))
+                except IOError:
                     print("{}\t{}".format("ERROR", line))
 
 
