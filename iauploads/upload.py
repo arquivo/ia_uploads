@@ -22,9 +22,9 @@ def iaupload(config, upload_list, access, secret, debug):
                     if hasattr(result[0], 'status_code'):
                         print("{}\t{}".format(result[0].status_code, line))
                     else:
-                        print("{}\t{}".format("ERROR", line))
+                        print("{}\tstatus_code\t{}".format("ERROR", line))
                 except IOError:
-                    print("{}\t{}".format("ERROR", line))
+                    print("{}\tIOError\t{}".format("ERROR", line))
 
 
 def main():
