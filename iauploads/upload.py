@@ -17,7 +17,7 @@ def iaupload(config, upload_list, access, secret, debug):
                     result = upload(identifier, files=os.path.join(configs['files_directory'], arc),
                                     metadata=configs['metadata'],
                                     access_key=access,
-                                    secret_key=secret, verbose=True, retries=10, retries_sleep=300, debug=debug)
+                                    secret_key=secret, verbose=True, retries=10, retries_sleep=120, debug=debug)
 
                     if hasattr(result[0], 'status_code'):
                         print("{}\t{}".format(result[0].status_code, line))
