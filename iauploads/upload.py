@@ -1,5 +1,6 @@
 import argparse
 import os
+import time
 
 import yaml
 from internetarchive import upload
@@ -31,6 +32,7 @@ def ia_upload(config, upload_list, access, secret, debug):
                     except IOError:
                         fail_number += 1
                         print("{}\tIOError\t{}".format("ERROR", line))
+                        time.sleep(60)
 
 
 def main():
