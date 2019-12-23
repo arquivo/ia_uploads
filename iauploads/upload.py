@@ -5,7 +5,16 @@ import yaml
 from internetarchive import upload
 
 
-def iaupload(config, upload_list, access, secret, debug):
+def upload_single_file(line, identifier, arc_file_path, configs, access, secret, debug):
+    result = upload(identifier, files=arc_file_path, metadata=configs['metadata'], access_key=access,
+                    secret_key=secret, verbose=True, retries=10, retries_sleep=60, debug=debug)
+    if hasattr(result[0], 'status_code'):
+        print("{}\t{}".format(result[0].status_code, line))
+    else:
+        print("{}\tstatus_code\t{}".format("ERROR", line))
+
+
+def ia_upload(config, upload_list, access, secret, debug):
     with open(config) as file:
         configs = yaml.load(file, Loader=yaml.FullLoader)
 
@@ -13,18 +22,15 @@ def iaupload(config, upload_list, access, secret, debug):
             for line in input_file.readlines():
                 identifier, arc, file_md5 = line.split()
 
-                try:
-                    result = upload(identifier, files=os.path.join(configs['files_directory'], arc),
-                                    metadata=configs['metadata'],
-                                    access_key=access,
-                                    secret_key=secret, verbose=True, retries=10, retries_sleep=120, debug=debug)
-
-                    if hasattr(result[0], 'status_code'):
-                        print("{}\t{}".format(result[0].status_code, line))
-                    else:
-                        print("{}\tstatus_code\t{}".format("ERROR", line))
-                except IOError:
-                    print("{}\tIOError\t{}".format("ERROR", line))
+                fail_number = 0
+                while fail_number < 3:
+                    arc_file_path = os.path.join(configs['files_directory'], arc)
+                    try:
+                        upload_single_file(line, identifier, arc_file_path, configs, access, secret, debug)
+                        break
+                    except IOError:
+                        fail_number += 1
+                        print("{}\tIOError\t{}".format("ERROR", line))
 
 
 def main():
@@ -42,7 +48,7 @@ def main():
     access = os.environ[args.access]
     secret = os.environ[args.secret]
 
-    iaupload(args.config_path, args.uploadlist_file_path, access, secret, debug)
+    ia_upload(args.config_path, args.uploadlist_file_path, access, secret, debug)
 
 
 if __name__ == '__main__':
