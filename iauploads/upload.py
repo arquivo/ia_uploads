@@ -1,9 +1,10 @@
 import argparse
 import os
-import time
 
 import yaml
 from internetarchive import upload
+
+failed_lines = []
 
 
 def upload_single_file(line, identifier, arc_file_path, configs, access, secret, debug):
@@ -23,16 +24,21 @@ def ia_upload(config, upload_list, access, secret, debug):
             for line in input_file.readlines():
                 identifier, arc, file_md5 = line.split()
 
-                fail_number = 0
-                while fail_number < 3:
-                    arc_file_path = os.path.join(configs['files_directory'], arc)
-                    try:
-                        upload_single_file(line, identifier, arc_file_path, configs, access, secret, debug)
-                        break
-                    except IOError:
-                        fail_number += 1
-                        print("{}\tIOError\t{}".format("ERROR", line))
-                        time.sleep(60)
+                arc_file_path = os.path.join(configs['files_directory'], arc)
+                try:
+                    upload_single_file(line, identifier, arc_file_path, configs, access, secret, debug)
+                    break
+                except IOError:
+                    failed_lines.append(line)
+
+        # try to re-upload the ones that gave error in the end
+        for line in failed_lines:
+            identifier, arc, file_md5 = line.split()
+            arc_file_path = os.path.join(configs['files_directory'], arc)
+            try:
+                upload_single_file(line, identifier, arc_file_path, configs, access, secret, debug)
+            except IOError:
+                print("{}\tIOError\t{}".format("ERROR", line))
 
 
 def main():

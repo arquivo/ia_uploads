@@ -2,13 +2,13 @@ from setuptools import setup
 
 setup(
     name='iauploads',
-    version='1.3.6',
+    version='1.3.7',
     packages=['iauploads'],
     url='https://arquivo.pt',
     license='',
     author='Daniel Bicho',
     author_email='daniel.bicho@fccn.pt',
-    description='Tools to upload Arquivo.pt contents for IA.',
+    description='Tools to upload Arquivo.pt contents to IA.',
     install_requires=[
         "internetarchive",
         "PyYAML"
