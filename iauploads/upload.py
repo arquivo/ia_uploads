@@ -27,7 +27,6 @@ def ia_upload(config, upload_list, access, secret, debug):
                 arc_file_path = os.path.join(configs['files_directory'], arc)
                 try:
                     upload_single_file(line, identifier, arc_file_path, configs, access, secret, debug)
-                    break
                 except IOError:
                     failed_lines.append(line)
 
