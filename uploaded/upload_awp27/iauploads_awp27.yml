@@ -1,0 +1,20 @@
+files_directory: "/data/collections/AWP27/"
+
+year: 2018
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "AWP27"
+    external_identifier: "urn:X-pwacrawlid:AWP27"
+    title: "The twenty-seventh crawl of the Portuguese web (incremental), performed in 2018 (AWP27)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "111 848 303 wew files (13 TB) incrementally crawled between 14 July  2018 and July 28 2018 mainly from .PT domain and web sites crawled during the previous crawl." 
+    description: "Twenty-seventh collection AWP. No Deduplicator." 
+    language: "por"
+    subject: "Complete crawl of the Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:AWP27; 2018"
+    notes: "All the items of the AWP27 crawl are identified by the custom field pwacrawlid:AWP27. The AWP27 crawl is complete because it was performed without using DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2018-07-14"

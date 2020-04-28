@@ -1,0 +1,20 @@
+files_directory: "/data/collections/AWP26/"
+
+year: 2018
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "AWP26"
+    external_identifier: "urn:X-pwacrawlid:AWP26"
+    title: "The twenty-sixtieth crawl of the Portuguese web (incremental), performed in 2018 (AWP26)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "233 145 629 web files (14 TB) incrementally crawled between 9 April 2018 and 2 July 2018 mainly from .PT domain and web sites crawled during the previous crawl." 
+    description: "Twenty-sixtieth collection AWP. No Deduplicator." 
+    language: "por"
+    subject: "Complete crawl of the Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:AWP26; 2018"
+    notes: "All the items of the AWP26 crawl are identified by the custom field pwacrawlid:AWP26. The AWP26 crawl is complete because it was performed without using DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2018-04-09"
