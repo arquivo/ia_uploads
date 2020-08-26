@@ -1,0 +1,20 @@
+files_directory: "/data/collections/AWP29/"
+
+year: 2019
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "AWP29"
+    external_identifier: "urn:X-pwacrawlid:AWP29"
+    title: "The twenty-ninth crawl of the Portuguese web (incremental), performed in 2019 (AWP29)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "386 225 779 new files (22.90 TB) incrementally crawled between 01 April 2019 and 26 April 2019 mainly from .PT domain and web sites crawled during the previous crawl." 
+    description: "Twenty-ninth collection AWP. No Deduplicator." 
+    language: "por"
+    subject: "Complete crawl of the Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:AWP29; 2019"
+    notes: "All the items of the AWP29 crawl are identified by the custom field pwacrawlid:AWP29. The AWP29 crawl is complete because it was performed without using DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2019-04-01"
