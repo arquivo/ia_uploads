@@ -1,0 +1,20 @@
+files_directory: "/data/collections/AWP32/"
+
+year: 2020
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "AWP32"
+    external_identifier: "urn:X-pwacrawlid:AWP32"
+    title: "The Thirty two crawl of the Portuguese web (incremental), performed in 2020 (AWP32)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "836 246 709 new files (29 TB) incrementally crawled between 03 March 2020 and 04 May 2020 mainly from .PT domain and web sites crawled during the previous crawl." 
+    description: "Thirty two collection AWP. Without Deduplicator." 
+    language: "por"
+    subject: "Complete crawl of the Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:AWP32; 2020"
+    notes: "All the items of the AWP32 crawl are identified by the custom field pwacrawlid:AWP32. The AWP32 crawl is complete because it was performed with using without DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2020-03-03"
