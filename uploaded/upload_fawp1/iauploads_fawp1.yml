@@ -1,0 +1,20 @@
+files_directory: "/data/collections/FAWP1/"
+
+year: 2010
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "FAWP1"
+    external_identifier: "urn:X-pwacrawlid:FAWP1"
+    title: "1st block of frequent collections of Portuguese web (mainly websites of news media), performed in 2010 (FAWP1)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "57 352 532 new files (2 TB) incrementally crawled between 23 March 2010 and 06 July 2010 mainly websites of news media, websites with frequent renewal of contents, government and public bodies." 
+    description: "First collection FAWP. Without Deduplicator." 
+    language: "por"
+    subject: "Frequent crawl of news media from Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:FAWP1; 2010"
+    notes: "All the items of the FAWP1 crawl are identified by the custom field pwacrawlid:FAWP1. The FAWP1 crawl is complete because it was performed without using DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2010-07-06"
