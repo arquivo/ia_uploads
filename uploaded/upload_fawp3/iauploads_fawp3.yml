@@ -1,0 +1,20 @@
+files_directory: "/data/collections/FAWP3/"
+
+year: 2010
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "FAWP3"
+    external_identifier: "urn:X-pwacrawlid:FAWP23"
+    title: "3st block of frequent collections of Portuguese web (mainly websites of news media), performed in 2010 (FAWP3)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "45 623 908 new files (0,87 TB) incrementally crawled between 22 September 2010 and 31 December 2010 mainly websites of news media, websites with frequent renewal of contents, government and public bodies." 
+    description: "Third collection FAWP. With Deduplicator." 
+    language: "por"
+    subject: "Frequent crawl of news media from Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:FAWP3; 2010"
+    notes: "All the items of the FAWP3 crawl are identified by the custom field pwacrawlid:FAWP3. The FAWP3 crawl is complete because it was performed with using DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2010-12-31"
