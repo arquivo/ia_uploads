@@ -1,0 +1,20 @@
+files_directory: "/data/collections/AWP34/"
+
+year: 2020
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "AWP34"
+    external_identifier: "urn:X-pwacrawlid:AWP34"
+    title: "The Thirty Four crawl of the Portuguese web (complete), performed in 2020 (AWP34)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "115 489 181 new files (8.4 TB) incrementally crawled between 01 Setember 2020 and 08 October 2020 mainly from .PT domain and web sites crawled during the previous crawl." 
+    description: "Thirty Four collection AWP. With Deduplicator." 
+    language: "por"
+    subject: "Complete crawl of the Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:AWP34; 2020"
+    notes: "All the items of the AWP34 crawl are identified by the custom field pwacrawlid:AWP34. The AWP34 crawl is complete because it was performed with DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2020-10-08"

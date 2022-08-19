@@ -1,0 +1,20 @@
+files_directory: "/data/collections/FAWP6/"
+
+year: 2011
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "FAWP6"
+    external_identifier: "urn:X-pwacrawlid:FAWP6"
+    title: "6st block of frequent collections of Portuguese web (mainly websites of news media), performed in 2011 (FAWP6)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "42 436 564 new files (1,8 TB) incrementally crawled between 01 Jul 2010 and 31 Sep 2011 mainly websites of news media, websites with frequent renewal of contents, government and public bodies." 
+    description: "Sixth collection FAWP. With Deduplicator." 
+    language: "por"
+    subject: "Frequent crawl of news media from Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:FAWP6; 2011"
+    notes: "All the items of the FAWP6 crawl are identified by the custom field pwacrawlid:FAWP6. The FAWP6 crawl is not complete because it was performed with using DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2011-09-30"
