@@ -1,0 +1,20 @@
+files_directory: "/data/collections/FAWP11/"
+
+year: 2012
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "FAWP11"
+    external_identifier: "urn:X-pwacrawlid:FAWP11"
+    title: "11st block of frequent collections of Portuguese web (mainly websites of news media), performed in 2012 (FAWP11)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "8 560 866 new files (0,3 TB) incrementally crawled between 01 Oct 2012 and 30 Dec 2012 mainly websites of news media, websites with frequent renewal of contents, government and public bodies." 
+    description: "Eleventh collection FAWP. With Deduplicator." 
+    language: "por"
+    subject: "Frequent crawl of news media from Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:FAWP11; 2012"
+    notes: "All the items of the FAWP11 crawl are identified by the custom field pwacrawlid:FAWP11. The FAWP11 crawl is not complete because it was performed with using DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2012-12-31"

@@ -1,0 +1,20 @@
+files_directory: "/data/collections/FAWP8/"
+
+year: 2012
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "FAWP8"
+    external_identifier: "urn:X-pwacrawlid:FAWP8"
+    title: "8st block of frequent collections of Portuguese web (mainly websites of news media), performed in 2012 (FAWP8)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "45 522 178 new files (2,1 TB) incrementally crawled between 01 Jan 2012 and 31 Mar 2012 mainly websites of news media, websites with frequent renewal of contents, government and public bodies." 
+    description: "Eight collection FAWP. With Deduplicator." 
+    language: "por"
+    subject: "Frequent crawl of news media from Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:FAWP8; 2012"
+    notes: "All the items of the FAWP8 crawl are identified by the custom field pwacrawlid:FAWP8. The FAWP8 crawl is not complete because it was performed with using DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2012-03-31"
