@@ -1,0 +1,20 @@
+files_directory: "/data/collections/AWP36/"
+
+year: 2020
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "AWP36"
+    external_identifier: "urn:X-pwacrawlid:AWP36"
+    title: "The Thirty six crawl of the Portuguese web (complete), performed in 2021 (AWP36)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "634 166 744 new files (17 TB) incrementally crawled between 01 Mar 2021 and 07 Apr 2021 mainly from .PT domain and web sites crawled during the previous crawl." 
+    description: "Thirty Six collection AWP. With Deduplicator." 
+    language: "por"
+    subject: "Complete crawl of the Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:AWP36; 2021"
+    notes: "All the items of the AWP36 crawl are identified by the custom field pwacrawlid:AWP36. The AWP36 crawl is complete because it was performed without DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2021-04-07"
