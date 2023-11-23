@@ -1,0 +1,20 @@
+files_directory: "/data/collections/EAWP6/"
+
+year: 2014
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "EAWP6"
+    external_identifier: "urn:X-pwacrawlid:EAWP6"
+    title: "Special collection of the .EU domain, first crawl to preserve content related to the European Community (EU) and its official bodies."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "129 793 987 new files (5,8 TB) complete crawled between 21 Nov 2014 and 16 Dec 2014." 
+    description: "Special collection of the .EU domain, first crawl, performed by the Arquivo.pt between November and December 2014, to preserve content related to the European Community (EU) and its official bodies. This collection is the first attempt to crawl and preserve web sites hosted under the .EU domain within the scope of RESAW activities.  RESAW is a European network that aims to create a Research Infrastructure for the Study of Archived Web Materials (resaw.eu). Without Deduplicator." 
+    language: "por"
+    subject: "Special collection of the .EU domain; Portuguese Web Archive; Portuguese online publications; pwacrawlid:EAWP6; 2014"
+    notes: "All the items of the EAWP6 crawl are identified by the custom field pwacrawlid:EAWP6. The EAWP6 crawl is complete because it was performed without DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2014-12-16"

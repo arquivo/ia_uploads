@@ -1,0 +1,20 @@
+files_directory: "/data/collections/FAWP14/"
+
+year: 2013
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "FAWP14"
+    external_identifier: "urn:X-pwacrawlid:FAWP14"
+    title: "14st block of frequent collections of Portuguese web (mainly websites of news media), performed in 2013 (FAWP14)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "27 686 676 new files (1.2 TB) incrementally crawled between 01 Jul 2013 and 30 Sep 2013 mainly websites of news media, websites with frequent renewal of contents, government and public bodies." 
+    description: "14th collection FAWP. With Deduplicator." 
+    language: "por"
+    subject: "Frequent crawl of news media from Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:FAWP14; 2013"
+    notes: "All the items of the FAWP14 crawl are identified by the custom field pwacrawlid:FAWP14. The FAWP14 crawl is not complete because it was performed with using DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2013-09-30"

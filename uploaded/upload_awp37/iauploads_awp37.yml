@@ -1,0 +1,20 @@
+files_directory: "/data/collections/AWP37/"
+
+year: 2021
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "AWP37"
+    external_identifier: "urn:X-pwacrawlid:AWP37"
+    title: "The Thirty Seven crawl of the Portuguese web (complete), performed in 2021 (AWP37)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "568 450 007 new files (9.8 TB) incrementally crawled between 02 Jun 2021 and 16 Jul 2021 mainly from .PT domain and web sites crawled during the previous crawl." 
+    description: "Thirty Seven collection AWP. With Deduplicator." 
+    language: "por"
+    subject: "Incremental crawl of the Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:AWP37; 2021"
+    notes: "All the items of the AWP37 crawl are identified by the custom field pwacrawlid:AWP37. The AWP37 crawl is Incremental because it was performed with DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2021-07-16"

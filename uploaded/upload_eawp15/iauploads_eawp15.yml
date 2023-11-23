@@ -1,0 +1,20 @@
+files_directory: "/data/collections/EAWP15/"
+
+year: 2017
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "EAWP15"
+    external_identifier: "urn:X-pwacrawlid:EAWP15"
+    title: "Special collection, third crawl of the .EU domain performed by the Arquivo.pt in July 2017, in order to preserve content related to the European Community (EU) and its official bodies."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "105 823 552 new files (11 TB) complete crawled between 02 Jun 2017 and 10 Jul 2017." 
+    description: "Special collection, third crawl of the .EU domain performed by the Arquivo.pt in July 2017, in order to preserve content related to the European Community (EU) and its official bodies. Without Deduplicator." 
+    language: "por"
+    subject: "Special collection, third crawl of the .EU domain; Portuguese Web Archive; Portuguese online publications; pwacrawlid:EAWP15; 2017"
+    notes: "All the items of the EAWP15 crawl are identified by the custom field pwacrawlid:EAWP15. The EAWP15 crawl is complete because it was performed without DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2017-07-10"

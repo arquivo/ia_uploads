@@ -1,0 +1,20 @@
+files_directory: "/data/collections/EAWP5/"
+
+year: 2014
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "EAWP5"
+    external_identifier: "urn:X-pwacrawlid:EAWP5"
+    title: "Special collection of the prof2000.pt website, before the removal of the publisher port. Prof2000 was a program of remote training for school teachers in Portugal."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "109 274 new files (0,0049 TB) complete crawled between 10 Oct 2014 and 31 Oct 2014 mainly Prof2000 websites." 
+    description: "Special collection of the prof2000.pt website, before the removal of the publisher port. Prof2000 was a program of remote training for school teachers in Portugal. The crawl was performed in October 2014. Acessible at https://arquivo.pt/wayback/20141023142253/http://prof2000.pt/. Without Deduplicator." 
+    language: "por"
+    subject: "Special collection of the prof2000.pt; Portuguese Web Archive; Portuguese online publications; pwacrawlid:EAWP5; 2014"
+    notes: "All the items of the EAWP5 crawl are identified by the custom field pwacrawlid:EAWP5. The FAWP5 crawl is not complete because it was performed without DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2014-10-31"
