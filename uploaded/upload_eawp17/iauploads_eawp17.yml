@@ -1,0 +1,20 @@
+files_directory: "/data/collections/EAWP17/"
+
+year: 2017
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "EAWP17"
+    external_identifier: "urn:X-pwacrawlid:EAWP17"
+    title: "Special collection, second crawl of the Portuguese local/municipal elections (Eleições Autárquicas) held in October 1, 2017. The crawl was performed after the election, the 10th and 11th October."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "1 083 062 new files (0.23 TB) complete crawled between 10 Oct 2017 and 11 Oct 2017." 
+    description: "Special collection, second crawl of the Portuguese local/municipal elections (Eleições Autárquicas). The crawl was performed after the election, the 10th and 11th October. Without Deduplicator." 
+    language: "por"
+    subject: "Special collection, second crawl of the Portuguese local/municipal elections (Eleições Autárquicas); Portuguese Web Archive; Portuguese online publications; pwacrawlid:EAWP17; 2017"
+    notes: "All the items of the EAWP17 crawl are identified by the custom field pwacrawlid:EAWP17. The EAWP17 crawl is complete because it was performed without DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2017-10-11"

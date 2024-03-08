@@ -1,0 +1,20 @@
+files_directory: "/data/collections/EAWP16/"
+
+year: 2017
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "EAWP16"
+    external_identifier: "urn:X-pwacrawlid:EAWP16"
+    title: "Special collection, first crawl of the Portuguese local/municipal elections (Eleições Autárquicas). The crawl was performed before the election, the 27th and 28th September."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "1 182 825 new files (0.13 TB) complete crawled between 27 Set 2017 and 28 Sep 2017." 
+    description: "Special collection, first crawl of the Portuguese local/municipal elections (Eleições Autárquicas). The crawl was performed before the election, the 27th and 28th September. Without Deduplicator." 
+    language: "por"
+    subject: "Special collection, first crawl of the Portuguese local/municipal elections (Eleições Autárquicas); Portuguese Web Archive; Portuguese online publications; pwacrawlid:EAWP16; 2017"
+    notes: "All the items of the EAWP16 crawl are identified by the custom field pwacrawlid:EAWP16. The EAWP16 crawl is complete because it was performed without DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2017-09-28"

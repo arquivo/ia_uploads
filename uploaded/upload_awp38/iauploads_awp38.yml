@@ -1,0 +1,20 @@
+files_directory: "/data/collections/AWP38/"
+
+year: 2021
+
+metadata:
+    collection: "portuguese-web-archive"
+    mediatype: "web"
+    pwacrawlid: "AWP38"
+    external_identifier: "urn:X-pwacrawlid:AWP38"
+    title: "The Thirty Eight crawl of the Portuguese web (Incremental), performed in 2021 (AWP38)."
+    adder: "Portuguese Web Archive"
+    creator: "Portuguese Web Archive"
+    contributor: "Portuguese Web Archive"
+    coverage: "560 843 698 new files (12 TB) incrementally crawled between 08 Oct 2021 and 26 Nov 2021 mainly from .PT domain and web sites crawled during the previous crawl." 
+    description: "Thirty Eight collection AWP. With Deduplicator." 
+    language: "por"
+    subject: "Incremental crawl of the Portuguese web; Portuguese Web Archive; Portuguese online publications; pwacrawlid:AWP38; 2021"
+    notes: "All the items of the AWP38 crawl are identified by the custom field pwacrawlid:AWP38. The AWP38 crawl is Incremental because it was performed with DeDuplicator."
+    credits: "Internet Archive Heritrix team."
+    date: "2021-11-26"
